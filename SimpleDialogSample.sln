@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleDialogSample", "SimpleDialogSample\SimpleDialogSample.csproj", "{3B6A8E80-A84B-4EA3-90BB-403086853551}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleDialogSampleWeb", "SimpleDialogSampleWeb\SimpleDialogSampleWeb.csproj", "{EBE5D3D7-3E39-454C-A8CC-098A44728F71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B6A8E80-A84B-4EA3-90BB-403086853551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B6A8E80-A84B-4EA3-90BB-403086853551}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B6A8E80-A84B-4EA3-90BB-403086853551}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3B6A8E80-A84B-4EA3-90BB-403086853551}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B6A8E80-A84B-4EA3-90BB-403086853551}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B6A8E80-A84B-4EA3-90BB-403086853551}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{EBE5D3D7-3E39-454C-A8CC-098A44728F71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBE5D3D7-3E39-454C-A8CC-098A44728F71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBE5D3D7-3E39-454C-A8CC-098A44728F71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBE5D3D7-3E39-454C-A8CC-098A44728F71}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
