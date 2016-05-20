@@ -1,4 +1,7 @@
 ﻿<!DOCTYPE html>
+<!-- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license.
+4  See LICENSE in the project root for license information -->
+
 <html>
 <head>
     <meta charset="UTF-8" />
@@ -29,7 +32,11 @@
             <div class="ms-font-xl ms-fontColor-neutralTertiary">Pick number</div>
             <p class="ms-font-m-plus ms-fontColor-neutralTertiary" id="template-description"></p>
             <br /><br />
-
+            <!--
+            IMPORTANT!!! Do NOT abuse the use of dialogs. It is generally a bad practice to show a dialog from an already open pane.
+                Overlapping UI can quickly annoy users. Only when your scenario needs to display elements that cannot be accomodated 
+                within a pane you should consider using a dialog
+                -->
             <button class="ms-Button ms-Button--primary" id="action-button">
                 <span class="ms-Button-icon"><i class="ms-Icon ms-Icon--plus"></i></span>
                 <span class="ms-Button-label" id="button-text"></span>

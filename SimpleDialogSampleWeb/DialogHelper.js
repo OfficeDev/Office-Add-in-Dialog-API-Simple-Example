@@ -1,12 +1,20 @@
-﻿var dialog;
+﻿/*Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. 
+4  See LICENSE in the project root for license information */
+
+var dialog;
 
 function dialogCallback(asyncResult) {
-    dialog = asyncResult.value;
-    /*Messages are sent by developers programatically from the dialog using office.context.ui.messageParent(...)*/
-    dialog.addEventHandler(Microsoft.Office.WebExtension.EventType.DialogMessageReceived, messageHandler);
+    if (asyncResult.status == "failed") {
+        showNotification(asyncResult.error.message);
+    }
+    else {
+        dialog = asyncResult.value;
+        /*Messages are sent by developers programatically from the dialog using office.context.ui.messageParent(...)*/
+        dialog.addEventHandler(Microsoft.Office.WebExtension.EventType.DialogMessageReceived, messageHandler);
 
-    /*Events are sent by the platform in response to user actions or errors. For example, the dialog is closed via the 'x' button*/
-    dialog.addEventHandler(Microsoft.Office.WebExtension.EventType.DialogEventReceived, eventHandler);
+        /*Events are sent by the platform in response to user actions or errors. For example, the dialog is closed via the 'x' button*/
+        dialog.addEventHandler(Microsoft.Office.WebExtension.EventType.DialogEventReceived, eventHandler);
+    }
 }
 
 
