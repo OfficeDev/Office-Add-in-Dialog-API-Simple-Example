@@ -1,4 +1,4 @@
-# Office Add-in DialogApi Example
+# Office Add-in Dialog API Example
 
 _Applies to: Word 2016_
 
