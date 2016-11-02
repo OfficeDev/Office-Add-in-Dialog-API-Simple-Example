@@ -71,6 +71,7 @@
     <Content Include="Images\ButtonPane16x16.png" />
     <Content Include="Images\ButtonPane32x32.png" />
     <Content Include="Images\ButtonPane80x80.png" />
+    <Content Include="message.banner.css" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -83,6 +84,7 @@
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Dialog.html" />
     <Content Include="FunctionFile.html" />
+    <Content Include="Scripts\FabricUI\message.banner.js" />
     <Content Include="Taskpane.css" />
     <Content Include="Taskpane.html" />
     <Content Include="Taskpane.js" />
@@ -91,7 +93,6 @@
     <Content Include="Images\Button32x32.png" />
     <Content Include="Images\Button80x80.png" />
     <Content Include="Images\Close.png" />
-    <Content Include="Scripts\FabricUI\MessageBanner.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />

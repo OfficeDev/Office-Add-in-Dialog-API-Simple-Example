@@ -16,7 +16,7 @@
 
   <!--Version. Updates from the store only get triggered if there is a version change. -->
   <Version>1.0.0.0</Version>
-  <ProviderName>[Provider name]</ProviderName>
+  <ProviderName>Microsoft Office Developer Education Team</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <!-- The display name of your add-in. Used on the store and various places of the Office UI such as the add-ins dialog. -->
   <DisplayName DefaultValue="SimpleDialogSample" />
@@ -27,9 +27,9 @@
 
   <!-- Domains that will be allowed when navigating. For example, if you use ShowTaskpane and then have an href link, navigation will only be allowed if the domain is on this list. -->
   <AppDomains>
-    <AppDomain>https://localhost:44328</AppDomain>
+
+    <AppDomain>AppDomain1</AppDomain>
     <AppDomain>AppDomain2</AppDomain>
-    <AppDomain>AppDomain3</AppDomain>
   </AppDomains>
   <!--End Basic Settings. -->
 
@@ -130,7 +130,6 @@
                   </Action>
                   
                 </Control>
-
               </Group>
             </OfficeTab>
           </ExtensionPoint>
@@ -156,19 +155,18 @@
       </bt:Urls>
       <!-- ShortStrings max characters==125. -->
       <bt:ShortStrings>
-        <bt:String id="Contoso.TaskpaneButton.Label" DefaultValue="Dialog from Taskpane" />
+        <bt:String id="Contoso.TaskpaneButton.Label" DefaultValue="Dialog from Task Pane" />
         <bt:String id="Contoso.FunctionButton.Label" DefaultValue="Dialog from Function" />
         <bt:String id="Contoso.Group1Label" DefaultValue="Sample Group" />
         <bt:String id="Contoso.GetStarted.Title" DefaultValue="Get started with your sample add-in!" />
       </bt:ShortStrings>
       <!-- LongStrings max characters==250. -->
       <bt:LongStrings>
-        <bt:String id="Contoso.TaskpaneButton.Tooltip" DefaultValue="Click to Show a Taskpane" />
+        <bt:String id="Contoso.TaskpaneButton.Tooltip" DefaultValue="Click to Show a Task Pane" />
         <bt:String id="Contoso.FunctionButton.Tooltip" DefaultValue="Click to Execute a Function" />
         <bt:String id="Contoso.GetStarted.Description" DefaultValue="Your sample add-in loaded succesfully. Go to the HOME tab and click button on the Sample Group to get started." />
       </bt:LongStrings>
     </Resources>
   </VersionOverrides>
   <!-- End Add-in Commands Mode integration. -->
-
 </OfficeApp>
