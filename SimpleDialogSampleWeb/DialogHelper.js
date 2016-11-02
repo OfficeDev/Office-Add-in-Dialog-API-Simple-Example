@@ -29,7 +29,7 @@ function dialogCallback(asyncResult) {
         dialog.addEventHandler(Office.EventType.DialogMessageReceived, messageHandler);
 
         /*Events are sent by the platform in response to user actions or errors. For example, the dialog is closed via the 'x' button*/
-        dialog.addEventHandler(Microsoft.Office.WebExtension.EventType.DialogEventReceived, eventHandler);
+        dialog.addEventHandler(Office.EventType.DialogEventReceived, eventHandler);
     }
 }
 
