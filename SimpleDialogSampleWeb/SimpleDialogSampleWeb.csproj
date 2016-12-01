@@ -73,6 +73,8 @@
     <Content Include="Images\ButtonPane80x80.png" />
     <Content Include="message.banner.css" />
     <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\dialog-test - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\dialog-test - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

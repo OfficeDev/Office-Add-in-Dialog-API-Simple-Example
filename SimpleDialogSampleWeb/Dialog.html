@@ -7,28 +7,39 @@
     <title></title>
 	<meta charset="utf-8" />
     <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.1.min.js"></script>
 
     <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
     <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
     <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css">
     <script>
-        function messageParent(text)
+        Office.initialize = function () {
+            $('#button1').click(one);
+            $('#button2').click(two);
+        };
+
+        function one()
         {
-            Office.context.ui.messageParent(text);
+            Office.context.ui.messageParent("Picked 1");
         }
+
+        function two() {
+            Office.context.ui.messageParent("Picked 2");
+        }
+        
     </script>
 </head>
 <body>
     <p class="ms-font-xxl ms-fontColor-neutralSecondary ms-fontWeight-semilight">Pick a number</p>
-    <button class="ms-Button ms-Button--primary" id="red-button" onclick="messageParent('Picked 1')">
+    <button class="ms-Button ms-Button--primary" id="button1">
         <span class="ms-Button-icon"><i class="ms-Icon ms-Icon--plus"></i></span>
-        <span class="ms-Button-label" id="button-text">1</span>
-        <span class="ms-Button-description" id="button-desc">Number 1</span>
+        <span class="ms-Button-label" id="button1-text">1</span>
+        <span class="ms-Button-description" id="button1-desc">Number 1</span>
     </button>
-    <button class="ms-Button ms-Button--primary" id="red-button" onclick="messageParent('Picked 2')">
+    <button class="ms-Button ms-Button--primary" id="button2">
         <span class="ms-Button-icon"><i class="ms-Icon ms-Icon--plus"></i></span>
-        <span class="ms-Button-label" id="button-text">2</span>
-        <span class="ms-Button-description" id="button-desc">Number 2</span>
+        <span class="ms-Button-label" id="button2-text">2</span>
+        <span class="ms-Button-description" id="button2-desc">Number 2</span>
     </button>
 </body>
 </html>
