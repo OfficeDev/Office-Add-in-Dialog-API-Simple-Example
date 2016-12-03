@@ -25,10 +25,17 @@
                 return;
             }
 
-            $("#template-description").text("Office JS ready. Click the pick a number button to show dialog");
-            $('#button-text').text("Pick a number!");
-            $('#button-desc').text("Pick your favorite number");            
-            $('#action-button').click(openDialog);
+            //Button that displays dialog as pop-up
+            $('#button-text').text("Pick a number (pop-up)");
+            $('#button-desc').text("Pick your favorite number");
+            $('#action-button').click(
+        openDialog);
+
+            //Button that displays dialog as IFrame. 
+            $('#button-text2').text("Pick a number (IFrame**)");
+            $('#button-desc2').text("Pick your favorite number");
+            $('#action-button2').click(
+                openDialogAsIframe);
         });
     };
 

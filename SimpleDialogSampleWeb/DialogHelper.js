@@ -53,17 +53,23 @@ function eventHandler(arg) {
             break;
         case 12006:
             // The dialog was closed, typically because the user the pressed X button.
-            showNotification("Opps, we need more information. Please reopen the dialog.");
+            showNotification("Dialog closed by user");
             break;
         default:
-            showNotification("Undefined error in popup window");
+            showNotification("Undefined error in dialog window");
             break;
     }
 }
 
 function openDialog() {
-    Office.context.ui.displayDialogAsync("https://localhost:44328/Dialog.html",
+    Office.context.ui.displayDialogAsync(window.location.origin + "/Dialog.html",
         { height: 50, width: 50 }, dialogCallback);
+}
+
+function openDialogAsIframe() {
+    //IMPORTANT: IFrame mode only works in Online (Web) clients. Desktop clients (Windows, IOS, Mac) always display as a pop-up inside of Office apps. 
+    Office.context.ui.displayDialogAsync(window.location.origin + "/Dialog.html",
+        { height: 50, width: 50, displayInIframe: true }, dialogCallback);
 }
 
 
