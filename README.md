@@ -55,3 +55,5 @@ The following samples also make use of the dialog API for authentication scenari
 - [Office Add-in Auth0](https://github.com/OfficeDev/Office-Add-in-Auth0)
 - [Excel Add-in ASP.NET QuickBooks](https://github.com/OfficeDev/Excel-Add-in-ASPNET-QuickBooks)
 - [Office Add-in Server Authentication Sample for ASP.net MVC](https://github.com/dougperkes/Office-Add-in-AspNetMvc-ServerAuth/tree/Office2016DisplayDialog)
+
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information, see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
