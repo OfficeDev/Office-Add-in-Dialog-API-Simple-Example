@@ -1,0 +1,23 @@
+### YamlMime:Sample
+sample:
+- name: Office Add-in Dialog API Example
+  path: ''
+  description: Learn how to open popup dialogs in Office Add-ins with the Dialog API's Office.context.ui.displayDialogAsync method and also the use of add-in commands.
+  readme: ''
+  generateZip: FALSE
+  isLive: TRUE
+  technologies:
+  - Office Add-in
+  azureDeploy: ''
+  author: LezaMax
+  platforms: []
+  languages:
+  - XML
+  - JavaScript
+  extensions:
+    products:
+    - Excel
+    - Word
+    - PowerPoint
+    - Outlook
+    scenarios: []
