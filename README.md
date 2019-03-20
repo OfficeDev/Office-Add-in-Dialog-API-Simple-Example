@@ -1,3 +1,20 @@
+---
+topic: sample
+products:
+- Excel
+- Word
+- PowerPoint
+- Outlook
+- Office 365
+languages:
+- JavaScript
+- XML
+extensions:
+  contentType: samples
+  technologies:
+  - Add-ins
+  createdDate: 5/13/2016 10:06:29 AM
+---
 # Office Add-in Dialog API Example
 
 _Applies to: Word 2016_
