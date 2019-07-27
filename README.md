@@ -1,6 +1,7 @@
 ---
 page_type: sample
 products:
+- office
 - office-excel
 - office-word
 - office-powerpoint
@@ -9,18 +10,21 @@ products:
 languages:
 - javascript
 - xml
+description: "Learn how to open popup dialogs in Office Add-ins with the Dialog API."
+urlFragment: office-add-in-api
 extensions:
   contentType: samples
   technologies:
   - Add-ins
-  createdDate: 5/13/2016 10:06:29 AM
+  createdDate: "5/13/2016 10:06:29 AM"
 ---
+
 # Office Add-in Dialog API Example
 
 _Applies to: Word 2016_
 
 ## Sample description
-Learn how to open popup dialogs in Office Add-ins with the [Dialog API's](http://dev.office.com/reference/add-ins/shared/officeui) **`Office.context.ui.displayDialogAsync`** method and also the use of [add-in commands](https://github.com/officedev/office-Add-in-Commands-Samples). While the sample uses Word you can easily use the same code for other Office applications including Excel, PowerPoint and Outlook. 
+Learn how to open popup dialogs in Office Add-ins with the [Dialog APIs](http://dev.office.com/reference/add-ins/shared/officeui) **`Office.context.ui.displayDialogAsync`** method and also the use of [add-in commands](https://github.com/officedev/office-Add-in-Commands-Samples). While the sample uses Word you can easily use the same code for other Office applications including Excel, PowerPoint and Outlook. 
 
 The first command uses the ShowTaskpane action and then an HTML button inside the taskpane to trigger a dialog from within a taskpane. The second command uses the ExecuteFunction action to display a dialog directly.
 
