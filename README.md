@@ -1,27 +1,8 @@
----
-page_type: sample
-products:
-- office
-- office-excel
-- office-word
-- office-powerpoint
-- office-outlook
-- office-365
-languages:
-- javascript
-- xml
-description: "Learn how to open popup dialogs in Office Add-ins with the Dialog API."
-urlFragment: office-add-in-api
-extensions:
-  contentType: samples
-  technologies:
-  - Add-ins
-  createdDate: "5/13/2016 10:06:29 AM"
----
-
-# Office Add-in Dialog API Example
+# [ARCHIVED] Office Add-in Dialog API Example
 
 _Applies to: Word 2016_
+
+*Note:** This repo is archived and no longer actively maintained. Security vulnerabilities may exist in the project, or its dependencies. If you plan to reuse or run any code from this repo, be sure to perform appropriate security checks on the code or dependencies first. Do not use this project as the starting point of a production Office Add-in. Always start your production code by using the Office/SharePoint development workload in Visual Studio, or the [Yeoman generator for Office Add-ins](https://github.com/OfficeDev/generator-office), and follow security best practices as you develop the add-in.
 
 ## Sample description
 Learn how to open popup dialogs in Office Add-ins with the [Dialog APIs](http://dev.office.com/reference/add-ins/shared/officeui) **`Office.context.ui.displayDialogAsync`** method and also the use of [add-in commands](https://github.com/officedev/office-Add-in-Commands-Samples). While the sample uses Word you can easily use the same code for other Office applications including Excel, PowerPoint and Outlook. 
